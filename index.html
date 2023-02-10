@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>tour with DOM</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        #fruits-title{
+            color: black;
+        }
+        #places-title{
+            background: #000;
+            width: auto;
+            text-align: center;
+        }
+        .important-places{
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dom er khela</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eligendi tenetur ipsam deserunt deleniti molestias veniam iusto nam error, nesciunt quam maiores voluptatum praesentium vel mollitia totam reprehenderit aperiam saepe atque! Eum, qui.</p>
+    <main id="main-container">
+        <section >
+            <h1>amar iccha ja lekh c ta</h1>
+            <ul>
+                <li>ami1</li>
+                <li>ami2</li>
+                <li>amir3</li>
+                <li>2mi4</li>
+                <li>aro onekei</li>
+                <li>ami5</li>
+            </ul>
+        </section  >
+        <!-- <ul>
+            <li>aam</li>
+            <li>jam</li>
+            <li>apple</li>
+            <li>komola</li>
+            <li>tormuj</li>
+        </ul> -->
+        <section>
+            <h1 id="fruits-title" class="some-class random-class blug-bg">Fruits I like</h1>
+            <ul>
+                <li>aam</li>
+                <li >jam</li>
+                <li >apple</li>
+                <li >komola</li>
+                <li>tormuj</li>
+            </ul>
+        </section>
+        <section id = 'places-container' class="yellow-bg large-text">
+            <h1 id="places-title">place I like to visit</h1>
+            <ul id="places-list">
+                <li class="important-places">sunderban</li>
+                <li class="important-places">bandarban</li>
+                <li class="important-places">kataban</li>
+                <li class="other-place">shalban</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        // console.log('ja dfdfer fdf  koro')
+        // const student = {
+        //     name : 'AKS',
+        //     ID : 13,
+        //     study : function (time){
+        //         console.log(time, "tay porte bosbe")
+        //     }
+        // }
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection)
+        // 
+        // for(li of liCollection){
+        //     console.log(li)
+        // }
+        for (const li of liCollection) {
+            // console.log(li.innerText)
+        }
+        const h2Collections = document.getElementsByTagName('h2');
+        for (const h2 of h2Collections) {
+            // console.log(h2.innerText)
+        }
+        const fruitsTitle = document.getElementById('fruits-title');
+        fruitsTitle.innerText = 'Fruits changed by JS'
+        // console.log(h2Collection)
+        const places = document.getElementsByClassName('important-places');
+        // console.log(places)
+        for (const place of places){
+            // console.log(place.innerText)
+        }
+
+    </script>
+    <script src="JS/javascript.js"></script>
+    <script src="JS/append.js"></script>
+    <script src="JS/stylein.js"></script>
+</body>
+
+</html>

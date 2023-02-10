@@ -1,0 +1,20 @@
+h1{
+    color: deeppink;
+}
+h2{
+    color: tomato;
+
+}
+ul{
+    color: gray;
+}
+.large-text{
+    font-size: 2em !important;
+}
+/* .yellow-bg{
+    background-color: rgb(84, 14, 189 ) !important; 
+    text-align: center;
+} */
+.text-center{
+    text-align: center;
+}
